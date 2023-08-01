@@ -1,0 +1,67 @@
+
+body {
+  background-color: rgb(253, 250, 250);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  max-width: 95%;
+}
+
+.pricing-header {
+  max-width: 700px;
+}
+
+[data-bs-theme="purple"] {
+  --bs-body-color: var(--bs-white);
+  --bs-body-color-rgb: #{to-rgb($white)};
+  --bs-body-bg: var(--bs-blue);
+  --bs-body-bg-rgb: #{to-rgb($blue)};
+  --bs-tertiary-bg: #{$blue-600};
+
+
+  .btn-secondary {
+    --bs-btn-bg: #{mix($gray-600, $blue-400, .5)};
+    --bs-btn-border-color: #{rgba($white, .25)};
+    --bs-btn-hover-bg: #{darken(mix($gray-600, $blue-400, .5), 5%)};
+    --bs-btn-hover-border-color: #{rgba($white, .25)};
+    --bs-btn-active-bg: #{darken(mix($gray-600, $blue-400, .5), 10%)};
+    --bs-btn-active-border-color: #{rgba($white, .5)};
+    --bs-btn-focus-border-color: #{rgba($white, .5)};
+    --bs-btn-focus-box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .2);
+  }
+}
+
+.btn-default{
+  background-color: #8f47d7;
+  color: white;
+  padding: 15px;
+  font-weight: 600;
+  font-size: 14px;
+  width: 90%;
+}
+
+.btn-default:hover {
+  background-color: #853bce;
+  color: white;
+}
+
+.btn-group{
+  padding: 3px;
+
+}
+
+.btn.dropdown-toggle-split:hover {
+  background-color: rgb(222, 219, 219);
+  border-radius: 7px ;
+}
+
+h2{
+  margin: 20px;
+  text-align: center;
+  width: 100%;
+  padding-top: 40px;
+  font-weight: 600;
+  font-size: 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
